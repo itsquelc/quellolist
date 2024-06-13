@@ -6,9 +6,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#000000c0',
-        borderBottomLeftRadius: 30,
-        borderBottomRightRadius: 30,
+        backgroundColor: '#236B8E',
     },
     title: {
         fontSize: 26,
@@ -22,13 +20,11 @@ export const styles = StyleSheet.create({
         flexDirection:'row',
         alignItems:'center',
         paddingHorizontal: 20,
-        backgroundColor: '#000000c0',
-        borderTopLeftRadius: 30,
-        borderBottomRightRadius: 30
+        backgroundColor: '#236B8E',
     },
 
     inputContainer: {
-        backgroundColor: '#000',
+        backgroundColor: '#A8A8A8',
         elevation: 40,
         flex: 1,
         height: 50,
@@ -42,7 +38,7 @@ export const styles = StyleSheet.create({
         borderRadius: 25,
         height: 50,
         width: 50,
-        backgroundColor: '#000',
+        backgroundColor: '#A8A8A8',
         elevation: 40,
         justifyContent: 'center',
         alignItems: 'center',

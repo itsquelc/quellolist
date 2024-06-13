@@ -8,13 +8,13 @@ export default function Welcome() {
     <View style={styles.container}>
       <View style={styles.containerImage}>
       <Image 
-      source={require('../assets/img.jpg')}
+      source={require('../assets/logo.jpg')}
       style={styles.logo} 
       />
       </View>
       <View style={styles.content}>
       <Text style={styles.title}>
-      Quello List
+      Quello List SuperMarket
       </Text>
       <Text style={styles.text}>
         Monte sua lista de compras com mais facilidade e rapidez, 
@@ -32,7 +32,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#236B8E',
   },
   containerImage: {
     flex: 2,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   button: {
     position: 'absolute',
-    backgroundColor: '#000',
+    backgroundColor: '#236B8E',
     bottom: '15%',
     alignSelf: 'center',
     borderRadius: 50,

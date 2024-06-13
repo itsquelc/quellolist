@@ -29,7 +29,7 @@ export default function Home() {
   const saveItemToDevice = async () => {
     try {
       const itemJson = JSON.stringify(items);
-      await AsyncStorage.setItem('quelloShopList', itemJson);
+      await AsyncStorage.setItem('quellolist', itemJson);
     } catch (error) {
       console.log (`Erro: ${error}`);
     }
@@ -37,7 +37,7 @@ export default function Home() {
 
   const getItemFromDevice = async () => {
     try{
-      const items = await AsyncStorage.getItem('quelloShopList');
+      const items = await AsyncStorage.getItem('quellolist');
       if (items != null){
         setItems(JSON.parse(items));
       }
@@ -51,7 +51,7 @@ export default function Home() {
     //console.log(textInput);
     if (textInput == '') {
       Alert.alert(
-        'Ocorreu um problema, por favor informe o nome do produto'
+        'Ocorreu um problema, informe o nome do produto'
       );
     } else {
       const newItem = {
@@ -85,8 +85,8 @@ export default function Home() {
   }
 
   const removeItem = itemId => {
-    Alert.alert ('excluir produto?', 
-      'confirma a exclusão desse produto?',
+    Alert.alert ('deseja excluir esse produto?', 
+      'tem certeza que deseja excluir esse produto?',
       [
         {
           text: 'sim', onPress: () => {
@@ -103,8 +103,8 @@ export default function Home() {
 
   const removeAll = () => {
     Alert.alert(
-      "Limpar Lista?",
-      "Confirma a exclusão de todos os todos os produtos da sua lista?",
+      "Deseja limpar todos os produtos da sua lista?",
+      "Tem certeza que deseja excluir todos os todos os produtos da sua lista?",
       [{
         text: 'Sim',
         onPress: () => { setItems([]) }
@@ -118,7 +118,7 @@ export default function Home() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ImageBackground
-        source={require('../../assets/background.jpg')}
+        source={require('../../assets/fundo.jpg')}
         resizeMode='repeat'
         style={{ flex: 1, justifyContent: 'flex-start' }}
       >
@@ -146,9 +146,9 @@ export default function Home() {
         <View style={styles.footer}>
           <View style={styles.inputContainer}>
             <TextInput
-              color="#fff"
+              color="#000"
               fontSize={18}
-              placeholderTextColor="#aeaeae"
+              placeholderTextColor="#000"
               placeholder='Digite o nome do produto...'
               value={textInput}
               onChangeText={(text) => setTextInput(text)}
