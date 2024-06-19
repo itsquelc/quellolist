@@ -123,7 +123,7 @@ export default function Home() {
         style={{ flex: 1, justifyContent: 'flex-start' }}
       >
         <View style={styles.header}>
-          <Text style={styles.title}>Lista de Produtos</Text>
+          <Text style={styles.title}>Lista de tarefas</Text>
           <View>
             <Ionicons name="trash" size={32} color="#fff" onPress={removeAll} />
           </View>

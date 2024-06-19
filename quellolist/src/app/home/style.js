@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#fff',
     },
+    
     footer: {
         position:'absolute',
         bottom: 0,
@@ -24,7 +25,7 @@ export const styles = StyleSheet.create({
     },
 
     inputContainer: {
-        backgroundColor: '#A8A8A8',
+        backgroundColor: '#A8A8A8c0',
         elevation: 40,
         flex: 1,
         height: 50,
@@ -38,7 +39,7 @@ export const styles = StyleSheet.create({
         borderRadius: 25,
         height: 50,
         width: 50,
-        backgroundColor: '#A8A8A8',
+        backgroundColor: '#A8A8A8c0',
         elevation: 40,
         justifyContent: 'center',
         alignItems: 'center',

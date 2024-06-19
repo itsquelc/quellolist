@@ -14,14 +14,14 @@ export default function Welcome() {
       </View>
       <View style={styles.content}>
       <Text style={styles.title}>
-      Quello List SuperMarket
+      Quello List 
       </Text>
       <Text style={styles.text}>
-        Monte sua lista de compras com mais facilidade e rapidez, 
-        otimizando o seu tempo!!
+        Monte sua lista de tarefas com mais facilidade e rapidez, 
+        sem esquecer nada, otimizando seu tempo!
       </Text>
       <Link style={styles.button} href={"/home"}>
-      <Text style={styles.buttonText}>Acessar o site</Text>
+      <Text style={styles.buttonText}>Acessar a lista</Text>
       </Link>
       <StatusBar style="light" backgroundColor='#000' />
       </View>
@@ -40,9 +40,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logo: {
-    width: 230,
-    height:230,
-    borderRadius:115,
+    width: 250,
+    height:250,
+    borderRadius:150,
     resizeMode: 'cover',
   },
   content: {
@@ -55,13 +55,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 30,
     fontWeight: 'bold',
-    marginTop: 28,
-    marginBottom: 20,
+    marginTop: 20,
+    marginBottom: 15,
     textAlign: 'center'
   },
-  Text: {
+  text: {
     fontSize: 16,
     color: 'gray',
+    textAlign:'center'
   },
   button: {
     position: 'absolute',
